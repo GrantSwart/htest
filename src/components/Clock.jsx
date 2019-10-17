@@ -52,7 +52,7 @@ class Clock extends Component {
             toffset={this.props.offset}
           />
         </h2>
-        <h1>Hello, {this.props.timezone}</h1>
+        {/* <h1>Hello, {this.props.timezone}</h1> */}
 
         {/* Call CalcTime component and pass in city and offset values based on country */}
         <h2>

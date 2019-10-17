@@ -8,7 +8,7 @@ class DigitalTime extends Component {
     var nd = new Date(utc + 3600000 * this.props.toffset);
     return (
       <div>
-        In {this.props.tcity} it is {nd.toLocaleString()}
+        {this.props.tcity} {nd.toLocaleString()}
       </div>
     );
   }

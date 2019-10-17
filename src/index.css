@@ -11,3 +11,209 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1,
+h2 {
+  color: greenyellow !important;
+  /*    color: rgba(0,0,0,0.6); */
+
+  font-family: Verdana;
+  font-size: 1em;
+
+
+}
+
+/* MEDIA OVERIDDES DESKTOP*/
+@media only screen and (min-width: 700px) {
+
+
+  .container {
+    /* This defines a flex container; inline or block depending on the given value. */
+    /* It enables a flex context for all its direct children. */
+    display: flex;
+
+    /* This establishes the main-axis, thus defining the direction flex items are placed in the flex container. */
+    /* flex-direction: row | row-reverse | column | column-reverse; */
+    flex-direction: row;
+
+    /* By default, flex items will all try to fit onto one line. */
+    /* You can change that and allow the items to wrap as needed with this property.*/
+    /* flex-wrap: nowrap | wrap | wrap-reverse; */
+    flex-wrap: wrap;
+
+    /* defines the alignment along the main axis. It helps distribute extra free space */
+    /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
+    justify-content: flex-start;
+
+    /* This defines the default behavior for how flex items are laid out along the cross axis on the current line. */
+    /*  align-items: stretch | flex-start | flex-end | center | baseline; */
+    align-items: stretch;
+
+
+    /* align-content: flex-start | flex-end | center | space-between | space-around | stretch; */
+    align-content: stretch;
+
+    padding-bottom: 10px;
+    /*  border: 5px solid #A4033C;*/
+    margin: 10px;
+    padding: 0px;
+
+  }
+
+  .outerbox {
+    display: flex;
+    flex-direction: row;
+    width: 32%;
+    margin: 3px;
+    /*   border: 8px solid #982244; */
+
+  }
+
+  .hoverbox {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    /*  border: 1px solid #982244; */
+  }
+
+  .box {
+    background: black;
+
+    margin: 20px;
+    padding: 0px;
+    width: 100%;
+
+    /* centre the elements inside the box item */
+    text-align: center;
+
+    /*rounded corners */
+    /* Four values - border-radius: 15px 50px 30px 5px; (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner): */
+
+    /*  padding: 20px; */
+
+  }
+
+  .innerbox {
+    /*  background: #eaff00; */
+    /* border: 1px solid purple;*/
+    margin: 3px;
+  }
+
+  .innerbox.small {
+    /*  background: #eaff00; */
+    /* border: 1px solid purple;*/
+    font-size: 1em;
+    font-family: Verdana;
+    color: #982244;
+  }
+
+  img {
+    /*background: lightblue;*/
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+    /* Set up proportionate scaling 
+              max-width: 100%;
+              height: auto;
+                  object-fit: cover; */
+    padding: 1px;
+    /* border: 5px solid #021a40;*/
+  }
+
+  /*  Object Fit: cover stretches or shrinks the image proportionally to fill the container. The image is cropped horizontally -or- vertically if necessary .contain stretches or shrinks the image proportionally to fit inside the container.
+scale-down shrinks the image proportionally to fit inside the container. */
+
+
+  #title {
+    /*use em to allow users to resize the text in the browser menu */
+    font-size: 2em;
+    font-family: Verdana;
+    color: greenyellow;
+  }
+
+  .hover {
+    /* padding: 5px;*/
+    background: #C0C0C0;
+  }
+}
+
+/* END MEDIA QUERY */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* SMALL DEVICES*/
+@media screen and (max-width: 700px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    /*    border: 1px solid #444444; */
+    /* margin: 20px;*/
+  }
+
+  .outerbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 5px solid #CCCC00;
+
+  }
+
+  .hoverbox {
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    border: 1px;
+  }
+
+  .box {
+    border: 15px solid #CCCC00;
+
+    /* centre the elements inside the box item */
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    /* Set up proportionate scaling 
+              max-width: 100%;
+              height: auto;
+                  object-fit: cover; */
+    padding: 1px;
+    /*    border: 5px solid #021a40; */
+  }
+
+  #title {
+    /*use em to allow users to resize the text in the browser menu */
+    font-size: 2em;
+    font-family: Verdana;
+    color: #000;
+
+  }
+
+  #title {
+    /*use em to allow users to resize the text in the browser menu */
+    font-size: 2em;
+    font-family: Verdana;
+    color: #000;
+
+  }
+
+  .innerbox.small {
+    /*  background: #eaff00; */
+    /* border: 1px solid purple;*/
+    font-size: 1em;
+    font-family: Verdana;
+    color: #000;
+  }
+
+  .hover {
+    /* padding: 5px;*/
+    background: #C0C0C0;
+
+  }
+
+}
+
+/* END MEDIA QUERY */
