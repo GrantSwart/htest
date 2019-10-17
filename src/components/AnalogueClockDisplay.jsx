@@ -14,9 +14,9 @@ class AnalogueClockDisplay extends Component {
     let minPosition = (min * 360) / 60 + (sec * 360) / 60 / 60;
     let secPosition = (sec * 360) / 60;
 
-    console.log("H " + hrPosition);
-    console.log("M " + minPosition);
-    console.log("S " + secPosition);
+    //console.log("H " + hrPosition);
+    //console.log("M " + minPosition);
+    //console.log("S " + secPosition);
 
     // HOURHAND.style.transform = "rotate(" + hrPosition + "deg)";
     // MINUTEHAND.style.transform = "rotate(" + minPosition + "deg)";
