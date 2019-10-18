@@ -76,7 +76,7 @@
 
 .second-arm {
   fill: none;
-  stroke: greenyellow;
+  /*stroke: greenyellow;*/
   stroke-width: 4;
   stroke-miterlimit: 10;
   filter: url(#red-glow);

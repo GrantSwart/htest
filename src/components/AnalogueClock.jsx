@@ -9,12 +9,11 @@ class AnalogueClock extends Component {
     var newdate = new Date(utc + 3600000 * this.props.toffset);
 
     return (
-      <div>
+      <React.Fragment>
         {/* <h3>{hr} + : + {min} + : + {sec}</h3> */}
-        <div>
-          <AnalogueClockDisplay newdate={newdate} />
-        </div>
-      </div>
+
+        <AnalogueClockDisplay newdate={newdate} color={this.props.color} />
+      </React.Fragment>
     );
   }
 }

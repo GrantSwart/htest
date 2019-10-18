@@ -43,19 +43,20 @@ class Clock extends Component {
 
     //this is the UI that is returned
     return (
-      <div>
+      <React.Fragment>
         {/* display analogue clock face pass in offset and city based on country */}
-        <h2>
+        <React.Fragment>
           <AnalogueClock
             thedate={this.state.date}
             tcity={this.props.city}
             toffset={this.props.offset}
+            color={this.props.color}
           />
-        </h2>
+        </React.Fragment>
         {/* <h1>Hello, {this.props.timezone}</h1> */}
 
         {/* Call CalcTime component and pass in city and offset values based on country */}
-        <h2>
+        <h2 style={{ color: this.props.color }}>
           <DigitalTime
             thedate={this.state.date}
             tcity={this.props.city}
@@ -63,8 +64,8 @@ class Clock extends Component {
           />
         </h2>
 
-        <h2>Timezone: {this.props.timezone}.</h2>
-      </div>
+        <h2 style={{ color: this.props.color }}>TZ: {this.props.timezone}</h2>
+      </React.Fragment>
     );
   }
 }

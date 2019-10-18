@@ -7,9 +7,9 @@ class DigitalTime extends Component {
     var utc = d.getTime() + d.getTimezoneOffset() * 60000;
     var nd = new Date(utc + 3600000 * this.props.toffset);
     return (
-      <div>
+      <React.Fragment>
         {this.props.tcity} {nd.toLocaleString()}
-      </div>
+      </React.Fragment>
     );
   }
 }

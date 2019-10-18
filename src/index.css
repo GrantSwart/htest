@@ -14,7 +14,7 @@ code {
 
 h1,
 h2 {
-  color: greenyellow !important;
+  color: greenyellow;
   /*    color: rgba(0,0,0,0.6); */
 
   font-family: Verdana;
